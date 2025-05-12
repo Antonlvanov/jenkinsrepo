@@ -12,7 +12,6 @@ pipeline {
                 sh 'docker stop test'
                 sh 'docker rn test'
                 sh 'docker run -p 4000:3000 --name test -d hello-app'
-                sh 'docker run -p 4000:3000 --name test -d hello-app'
             }
         }
     }
