@@ -4,14 +4,12 @@ pipeline {
     stages {
         stage('Create an image') {
             steps {
-                sh 'docker build . -t hello-app'
+                sh 'docker build . -t app'
             }
         }
         stage('Docker run') {
             steps {
-                sh 'docker stop test'
-                sh 'docker rn test'
-                sh 'docker run -p 4000:3000 --name test -d hello-app'
+                sh 'docker run -p 4000:3000 --name app-container -d app'
             }
         }
     }
