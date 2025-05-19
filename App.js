@@ -1,8 +1,8 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+const app = express();
+const port = 3000;
 
-app.get('/', (req, res) => {
+app.get('/travel', (req, res) => {
   res.send('Hochu poehat na gavai, no budu sidet doma');
 });
 
