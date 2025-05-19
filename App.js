@@ -8,4 +8,5 @@ app.get('/travel', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
+  console.log('Server is running and ready to accept requests');
 });
